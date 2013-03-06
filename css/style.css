@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#wpch_metabox_container{		
+		display : inline-block;
+		width : auto;
+		margin : 0 auto;	
+		box-sizing : border-box;
+		padding : 20px;
+	}
+	
+#wpch_form_data{
+		float : left;
+		display: inline-block;
+		padding : 10px 50px 20px;
+		background : #EEE;
+		border-radius : 3px;
+	    -moz-border-radius : 3px;
+		-webkit-border-radius : 3px;
+		border : 1px solid #EEE;		
+		margin : 0 10px;
+	}
+
+	#wpch_form_data input[type="text"]{
+			margin: 3px 0;
+		}
+		
+	#wpch_form_data h2{
+			margin : 0;
+		}
+		
+#wpch_image_indicator{
+		float: right;
+		width: 200px;
+		height: auto;
+		text-align: center;
+		border: 1px solid #DDD;
+		box-shadow: 0 1px 2px #FFF;
+		border-radius : 2px;
+	    -moz-border-radius : 2px;
+		-webkit-border-radius : 2px;		
+		margin: 1px 1px 1px 50px;
+		background : #f5f5f5;
+	}
+		#wpch_therm_img{
+			position : relative;
+			float : right;
+			margin-right : 11px;
+			display : none;
+		}
+		#wpch_cti_img{
+			position: relative;
+			float: left;
+			margin-top: -120px;
+			margin-left: -45px;
+			width: 140px;
+			height: 60px;
+			background: transparent url(images/cti.png) no-repeat 9px 0;
+			padding-top: 47px;
+			font-weight : bold;
+			font-size: small;
+		}
+		
+		.wpch_thermometer_canvas{
+			width : 170px;
+			margin-left : 30px;
+		}
+		
+		#wpch_slider{
+			float : right;
+			margin-top : -25px;
+			margin-right : 10px;
+			position: relative;
+			z-index: 1; 		
+		}
+		
+		#wpch_target_value{
+			font-weight: bold;
+			font-size: small;
+		}
+		
+/*Frontend style*/		
+#wpch_fend_container{
+	display: inline-block;
+	box-sizing : border-box;
+	width : auto;
+	height : auto;
+	text-align: center;
+	float: right;
+}
+
+#wpch_image_indicator_fend{
+		float: right;
+		width: 200px;
+		height: auto;
+		text-align: center;
+		border: 1px solid #DDD;
+		box-shadow: 0 1px 2px #FFF;
+		border-radius : 2px;
+	    -moz-border-radius : 2px;
+		-webkit-border-radius : 2px;		
+		margin: 1px 1px 1px 50px;
+		background : #f5f5f5;
+		color : #222;
+	}		
+	
+	#wpch_image_indicator_fend h3{
+		margin : 0 0 5px 0;
+		padding : 5px 0; 
+	}
+	
+	#wpch_therm_img_fend{
+			position : relative;
+			float : right;
+			margin-right : 11px;
+			display : none;
+		}
+		#wpch_cti_img_fend{
+			position: relative;
+			float: left;
+			margin-top: -120px;
+			margin-left: -45px;
+			width: 140px;
+			height: 60px;
+			background: transparent url(images/cti.png) no-repeat 9px 0;
+			padding-top: 45px;
+			font-weight : bold;
+			font-size: small;
+		}
+		
+		.wpch_thermometer_canvas_fend{
+			width : 170px;
+			margin-left : 30px;
+		}
+				
+		#wpch_target_value_fend{
+			font-weight: bold;
+			font-size: small;
+		}
+		
+		#wpch_curr-symbol_fend{
+			float: right;
+			margin-top: -94px;
+			margin-right: 57px;
+			position: relative;
+			z-index: 2;
+		}
