@@ -17,6 +17,15 @@
         			<div> 
         				<p>Use the shortcode below in your post/page/sidebar.</p>
         				<p style="font-size:13px;background:#FEFEFE;padding:2px;text-align:center;"><code>[wpch_thermometer id="<?php echo $post->ID; ?>"]</code></p> 
+                        <p style="font-size:13px;background:#FEFEFE;padding:2px;text-align:left;width:600px;">
+                        	To position the Charity-Thermometer on the frontend use the following shortcode of your choice: <br />                            
+                            [wpch_thermometer id="<?php echo $post->ID; ?>" position="left"]<br />
+                            [wpch_thermometer id="<?php echo $post->ID; ?>" position="right"]<br />
+                            Additionaly you when using the position='none' set the attribut margin to position your Thermometer accordingly. <br />
+                            [wpch_thermometer id="<?php echo $post->ID; ?>" position="none" margin="0"]<br />                            
+                            Remember to put the attribute for the scale, like `px` like so... margin="2px 5px 0 0"<br />
+                            This is only applicable to shortcode generated when you create a thermometer. The single post for the custom_post_type of this is always positioned right.  
+                        </p>
         			</div>	        			
             		<h2>Header Text</h2>			
             		<input type="text" name="wpch_frm_data_title_txt" id="wpch_frm_data_title_txt" class="widefat" placeholder="*Title" value="<?php _e($wpch_meta_title); ?>"/>

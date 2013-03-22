@@ -239,7 +239,9 @@ if ($wpch_meta_error){
 			
 			extract( shortcode_atts( array(
             	'id' => 0,
-            	'slug' => ''
+            	'slug' => '',
+				'position' => 'right',
+				'margin' => '0'
         	), $atts ) );
         
         	if(!$id) return;
@@ -273,7 +275,14 @@ if ($wpch_meta_error){
 		?>
         	<input type="hidden" id="wpch_target_data_value" value="<?php _e($wpch_meta_target); ?>">
         	<input type="hidden" id="wpch_current_data_value" value="<?php _e($wpch_meta_current); ?>">
-        	<div id="wpch_fend_container">
+            <?php 
+				if ( $position == 'none' ){
+					$override = 'float:none,margin:'.$margin; 
+				}else{
+					$override = 'float:'.$position;
+				}			
+			?>
+        	<div id="wpch_fend_container" style=" <?php echo $override; ?> ">
         		<h3 style="margin-left:50px;"><?php _e($wpch_meta_title) ?></h3>
 				<div id="wpch_image_indicator_fend">            		
 					<h3 id="wpch_header_txt"><?php _e($wpch_meta_header); ?></h3>
