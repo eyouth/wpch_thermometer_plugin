@@ -31,15 +31,23 @@ An answer to that question.
 
 == Screenshots ==
 
-1. https://github.com/eyouth/wpch_thermometer_plugin/blob/master/css/images/thermometer_sc.jpg
-2. https://github.com/eyouth/wpch_thermometer_plugin/blob/master/css/images/thermometer_sc2.jpg
+1. This is the screenshot for the admin of the charity-thermometer plugin.
+2. This one is generated shortcode in creating the charity-thermometer. Remember that the plugin will also generate a post of the created plugin, so you have a choice in embedding this to a page on a sidebar or you can have a link on the actual post.
 
 == Changelog ==
 
+= 1.1 =
+* Added shortcode attribute for positioning.
+* Add flush_rewrite_rules to fix 404 page not found in updating permalinks.
 
+= 1.0 =
+* Initial plugin version 
 
 == Upgrade notice ==
 
+= 1.1 = 
+* Fix 404 page not found in changing permalinks.
+*
 
 
 == Arbitrary section 1 ==
