@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: WP HTML5 Canvas Thermometer
+Plugin Name: Charity-Thermometer
 Plugin URI: http://scoopdesign.com.au
 Description: A plugin for Wordpress charity fund raiser, an html5 canvas thermometer. The html5-canvas and JS is a credit to <a href="https://github.com/rheh/HTML5-canvas-projects/tree/master/thermometer">Ray Hammond</a> who implements the canvas very well. I totally recode the script to make it usable to this plugin.   
 Version: 1.0
 Author: Eyouth { rob.panes }
-Author URI: http://scoodpesign.com.au
+Author URI: 
 
 Copyright YEAR  PLUGIN_AUTHOR_NAME  (email : robpane126@gmail.com)
 
@@ -55,9 +55,20 @@ if ($wpch_meta_error){
 				
 			load_plugin_textdomain( 'wphc_thermometer_plugin', false, dirname( plugin_basename( __FILE__ ) ) .'/lang/' );
 			
+			register_activation_hook( __FILE__, array(&$this, 'wphc_rewrite_flush' ) );
 		}
 		
+		public function wphc_rewrite_flush() {
+			// First, we "add" the custom post type via the above written function.
+			// Note: "add" is written with quotes, as CPTs don't get added to the DB,
+			// They are only referenced in the post_type column with a post entry, 
+			// when you add a post of this CPT.
+			self::create_post_type();
 		
+			// ATTENTION: This is *only* done during plugin activation hook in this example!
+			// You should *NEVER EVER* do this on every page load!!
+			flush_rewrite_rules();
+		}	
 
 		
 		/**

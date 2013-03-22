@@ -20,7 +20,7 @@ To use the thermometer simply download, install and activate the plugin, then ad
 
 == Installation ==
 
-1. Upload wp-html5-thermometer folder to the `/wp-content/plugins/` directory
+1. Upload charitydonation-thermometer folder to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Frequently asked questions ==
